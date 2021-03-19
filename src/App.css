@@ -10,6 +10,7 @@ body {
   padding: 20px;
   height: auto;
   min-height: 500px;
+  border-radius: 3px;
 }
 
 .new-todo {
@@ -27,4 +28,12 @@ body {
 
 .todo p {
   margin: 0;
+}
+
+.green {
+  background-color: lightgreen;
+}
+
+.white {
+  background-color: #fff;
 }
