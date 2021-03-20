@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Component } from "react";
 import AllToDos from '../components/AllToDos'
 import ToDo from '../components/ToDo'
 
@@ -7,7 +7,7 @@ function Main() {
         <>
             <AllToDos />
             <section className="todos-wrapper">
-                <ToDo />
+                {/* <ToDo /> */}
             </section>
         </>
     )

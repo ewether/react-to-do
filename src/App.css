@@ -10,6 +10,7 @@ body {
   padding: 20px;
   height: auto;
   min-height: 500px;
+  border-radius: 3px;
 }
 
 .new-todo {
@@ -23,8 +24,18 @@ body {
   text-align: left;
   padding: 12px 40px;
   border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .todo p {
   margin: 0;
+}
+
+.complete {
+  text-decoration: line-through;
+}
+
+.not-complete {
+  text-decoration: none;
 }
