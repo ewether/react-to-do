@@ -2,12 +2,17 @@ import React, { useState } from "react";
 
 // on todo click -> turn green
 
-function ToDo() {
-    const [green, setGreen] = useState(false);
+function ToDo({ text }) {
+    const [complete, setComplete] = useState(false);
 
     return (
-        <div className={` todo ${green ? 'green' : 'white'} `} onClick={() => setGreen(!green)}>
-            <p>Walk dog</p>
+        <div className={` todo ${complete ? 'complete' : 'not-complete'} `} onClick={() => setComplete(!complete)}>
+            <p>{text}</p>
+
+            <div className="todo-buttons">
+                <button className="edit-button">Edit</button>
+                <button className="delete-button">Delete</button>
+            </div>
         </div>
     )
 }

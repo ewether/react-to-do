@@ -24,16 +24,18 @@ body {
   text-align: left;
   padding: 12px 40px;
   border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .todo p {
   margin: 0;
 }
 
-.green {
-  background-color: lightgreen;
+.complete {
+  text-decoration: line-through;
 }
 
-.white {
-  background-color: #fff;
+.not-complete {
+  text-decoration: none;
 }

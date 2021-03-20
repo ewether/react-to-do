@@ -7,7 +7,7 @@ function Main() {
         <>
             <AllToDos />
             <section className="todos-wrapper">
-                <ToDo />
+                {/* <ToDo /> */}
             </section>
         </>
     )
