@@ -4,11 +4,11 @@ import ToDo from './ToDo'
 function AllToDos() {
     const [value, setValue] = useState('');
     const [todos, setTodos] = useState([
-            'Walk dog',
+        'Walk dog',
     ])    
 
     const addTodo = (text) => {
-        const newTodos = [... todos, text];
+        const newTodos = [...todos, text];
         setTodos(newTodos);
     }
 
