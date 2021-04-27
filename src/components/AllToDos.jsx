@@ -24,12 +24,12 @@ function AllToDos() {
 
     return (
         <div className="main-wrapper">
-            <h1>To Do List</h1>
+            <h1>Tasks</h1>
 
             <div className="new-todo">
                 <form onSubmit={handleSubmit}>
                     <label>
-                        <input value={value} onChange={handleChange} type="text" name="todo" placeholder="Enter a new to do ..." />
+                        <input value={value} onChange={handleChange} type="text" name="todo" placeholder="Enter a new task ..." />
                     </label>
                     <input type="submit" value="Submit" />
                 </form>
