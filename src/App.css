@@ -1,24 +1,32 @@
 body {
   text-align: center;
+  background: rgb(121,199,142);
+  background: linear-gradient(16deg, rgba(121,199,142,1) 9%, rgba(6,144,143,1) 83%);  
+  height: 100vh;
+  color: #101219;
 }
 
 .container {
-  background-color: lightgray;
-  width: 80%;
+  background-color: #fcfffe;
+  width: 30%;
   max-width: 800px;
   margin: 80px auto 0px;
-  padding: 20px;
-  height: auto;
-  min-height: 500px;
-  border-radius: 3px;
+  padding: 40px 20px;
+  height: 500px;
+  border-radius: 4px;
+}
+
+.main-wrapper h1 {
+  font-size: 1.75em;
 }
 
 .new-todo {
-  margin: 40px auto 0px;
+  margin: 20px auto 0px;
 }
 
 .todo {
-  background-color: white;
+  /* background-color: white; */
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
   width: 70%;
   margin: 40px auto 10px;
   text-align: left;
