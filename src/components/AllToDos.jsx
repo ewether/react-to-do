@@ -12,14 +12,15 @@ function AllToDos() {
         setTodos(newTodos);
     }
 
-    function handleChange(event) {
-        setValue(event.target.value);
+    function handleChange(e) {
+        setValue(e.target.value);
     }
 
-    function handleSubmit(event) {
+    function handleSubmit(e) {
         const userInput = value;
-        event.preventDefault();
+        e.preventDefault();
         addTodo(userInput);
+        setValue('');
     }
 
     return (

@@ -22,9 +22,8 @@ function ToDo({ text }) {
             <p>{text}</p>
 
             <div className="todo-buttons">
-              <button className="edit-button">Edit</button>
               <button className="delete-button" onClick={() => deleteClick()}>
-                Delete
+                X
               </button>
             </div>
           </div>
