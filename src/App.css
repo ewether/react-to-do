@@ -6,44 +6,89 @@ body {
   color: #101219;
 }
 
+/* 7CEB9A */
+/* E3E5E3 */
+
 .container {
   background-color: #fcfffe;
-  width: 30%;
+  background-color: #f7f7f7;
+  width: 28%;
   max-width: 800px;
-  margin: 80px auto 0px;
+  margin: 56px auto 0px;
   padding: 40px 20px;
   height: 500px;
   border-radius: 4px;
+  position: relative;
+  /* border-collapse: collapse; */
 }
 
 .main-wrapper h1 {
   font-size: 1.75em;
+  margin: 30px 0 40px;
 }
 
 .new-todo {
-  margin: 20px auto 0px;
+  margin: 30px auto 0px;
 }
 
 .todo {
-  /* background-color: white; */
+  background-color: white;
   /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
-  width: 70%;
-  margin: 40px auto 10px;
+  width: 80%;
+  margin: 10px auto 0px;
   text-align: left;
-  padding: 12px 40px;
+  padding: 4px 20px;
   border-radius: 3px;
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
+  align-items: center;
 }
 
 .todo p {
   margin: 0;
 }
 
+.todo-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.delete-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  transform: rotate(45deg);
+  /* margin: 2px 0 3px; */
+}
+
 .complete {
-  text-decoration: line-through;
+  /* text-decoration: line-through; */
 }
 
 .not-complete {
   text-decoration: none;
+}
+
+.checkmark {
+  height: 39px;
+  width: 39px;
+}
+
+.add-task-icon {
+  width: 112px;
+  /* height: 100px; */
+  cursor: pointer;
+  transition: transform .25s ease-in-out;
+  position: absolute;
+  bottom: -54px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.add-task-icon:hover {
+  transform: rotate(90deg);
 }
