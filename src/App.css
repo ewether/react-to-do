@@ -10,8 +10,9 @@ body {
 /* E3E5E3 */
 
 .container {
-  background-color: #fcfffe;
-  background-color: #f7f7f7;
+  /* background-color: #fcfffe; */
+  /* background-color: #f7f7f7; */
+  background-color: #fff;
   width: 28%;
   max-width: 800px;
   margin: 56px auto 0px;
@@ -33,6 +34,7 @@ body {
 
 .todo {
   background-color: white;
+  box-shadow: rgb(0 0 0 / 10%) 1.95px 1.95px 2.6px;
   /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
   width: 80%;
   margin: 10px auto 0px;
@@ -43,6 +45,11 @@ body {
   justify-content: space-between;
   cursor: pointer;
   align-items: center;
+}
+
+.todo:hover {
+  /* box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px; */
+  color: #878787;
 }
 
 .todo p {
