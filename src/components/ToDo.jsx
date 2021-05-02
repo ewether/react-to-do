@@ -12,6 +12,8 @@ function ToDo({ text }) {
     const [complete, setComplete] = useState(false);
     const [deleted, setDeleted] = useState(false);
     const [hover, setHover] = useState(false);
+    const [checkHover, setCheckHover] = useState(false);
+    const [deleteHover, setDeleteHover] = useState(false);
  
     function deleteClick() {
         setDeleted(true);
@@ -19,6 +21,14 @@ function ToDo({ text }) {
 
     function todoHover() {
       setHover(!hover);
+    }
+
+    function toDeleteHover() {
+      setDeleteHover(!deleteHover);
+    }
+
+    function toCheckHover() {
+      setCheckHover(!checkHover);
     }
 
     return (
@@ -41,18 +51,22 @@ function ToDo({ text }) {
               ) : (
                 <img
                   className="checkmark grey-checkmark"
-                  src={hover ? LtGrnCheckmark : GreyCheckmark}
+                  src={
+                    checkHover ? Checkmark : hover ? LtGrnCheckmark : GreyCheckmark
+                  }
                   alt="grey checkmark"
+                  onMouseOver={() => toCheckHover()}
+                  onMouseOut={() => toCheckHover()}
                 />
               )}
               {/* </div> */}
               <img
                 className={"delete-button"}
-                src={hover ? LtRedDelete : GreyDelete}
+                src={deleteHover ? RedDelete : hover ? LtRedDelete : GreyDelete}
                 alt="Delete"
                 onClick={() => deleteClick()}
-                onMouseOver={(e) => (e.currentTarget.src = RedDelete)}
-                onMouseOut={(e) => (e.currentTarget.src = GreyDelete)}
+                onMouseOver={() => toDeleteHover()}
+                onMouseOut={() => toDeleteHover()}
               />
             </div>
           </div>

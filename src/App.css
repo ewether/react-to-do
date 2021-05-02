@@ -13,9 +13,9 @@ body {
   /* background-color: #fcfffe; */
   /* background-color: #f7f7f7; */
   background-color: #fff;
-  width: 28%;
+  width: 25%;
   max-width: 800px;
-  margin: 56px auto 0px;
+  margin: 50px auto 0px;
   padding: 40px 20px;
   height: 500px;
   border-radius: 4px;
@@ -33,13 +33,14 @@ body {
 }
 
 .todo {
-  background-color: white;
-  box-shadow: rgb(0 0 0 / 10%) 1.95px 1.95px 2.6px;
+  /* background-color: #fff; */
+  /* background-color: #f2fafa; */
+  /* box-shadow: rgb(0 0 0 / 10%) 1.95px 1.95px 2.6px; */
   /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
   width: 80%;
-  margin: 10px auto 0px;
+  margin: 4px auto 0px;
   text-align: left;
-  padding: 4px 20px;
+  padding: 4px 4px;
   border-radius: 3px;
   display: flex;
   justify-content: space-between;
@@ -49,7 +50,9 @@ body {
 
 .todo:hover {
   /* box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px; */
-  color: #878787;
+  color: #6b6b6b;
+  /* background-color: #edfafa; */
+  /* box-shadow: rgb(0 0 0 / 8%) 1.95px 1.95px 2.6px; */
 }
 
 .todo p {
@@ -80,7 +83,7 @@ body {
 }
 
 .checkmark {
-  height: 39px;
+  height: 38px;
   width: 39px;
 }
 
