@@ -47,7 +47,16 @@ function ToDo({ text }) {
             <div className="todo-buttons">
               {/* <div className="checkmark-wrapper"> */}
               {complete ? (
-                <img className="checkmark" src={Checkmark} alt="checkmark" />
+                <img
+                  className={`checkmark ${
+                    checkHover ? "delete-button" : "checkmark grey-checkmark"
+                  }`}
+                  src={checkHover ? RedDelete : Checkmark}
+                  alt="checkmark"
+                  onMouseOver={() => toCheckHover()}
+                  onMouseOut={() => toCheckHover()}
+                  onClick={() => deleteClick()}
+                />
               ) : (
                 <img
                   className={`checkmark ${
@@ -55,12 +64,16 @@ function ToDo({ text }) {
                   }`}
                   // className="checkmark grey-checkmark"
                   src={
-                    checkHover ? RedDelete : hover ? LtGrnCheckmark : GreyCheckmark
+                    checkHover
+                      ? RedDelete
+                      : hover
+                      ? LtGrnCheckmark
+                      : GreyCheckmark
                   }
                   alt="grey checkmark"
                   onMouseOver={() => toCheckHover()}
                   onMouseOut={() => toCheckHover()}
-                  // onClick={() => deleteClick()}
+                  onClick={() => deleteClick()}
                 />
               )}
               {/* </div> */}
